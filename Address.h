@@ -8,12 +8,12 @@ using namespace std;
 class Address
 {
 	char* house_Number;
-	char* street_Name ;
+	char* street_Name;
 	char * city;
-	char* county;
+	char* country;
 
 public:
-	Address(char* house_Number, char* Street_Name, char * City,char* County);
+	Address(char* house_Number, char* Street_Name, char * City, char* County);
 	// an overloaded constructor
 	Address(const Address&);
 	//copy constructor

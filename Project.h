@@ -9,7 +9,7 @@ class Project
 	int budget;
 	int duration; //estimate duration of project in weeks
 
-public: 
+public:
 	Project(char* name, int budget, int duration);
 	// an overloaded constructor
 	Project(const Project&);
@@ -18,7 +18,8 @@ public:
 	//overloaded insertion operator
 	const Project &   operator=(const Project& other);
 	//overloaded assignment operator
-	void setBudget(int); 
+	void setBudget(int);
 	~Project();
-}; 
+	bool exists(Project const *)const;
+};
 #endif
